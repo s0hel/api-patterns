@@ -1,0 +1,51 @@
+
+### Send POST request with json body
+POST http://127.0.0.1:8000/books
+Content-Type: application/json
+
+{
+  "id": 2000,
+  "title": "iPhone vs Android",
+  "author": "Sohel Katchi",
+  "isbn": "1234569-X",
+  "publisher": "Pluralsight"
+}
+
+###
+
+GET http://127.0.0.1:8000/books/2000
+
+###
+
+PUT http://127.0.0.1:8000/books/2000
+Content-Type: application/json
+
+{
+  "id": 2000,
+  "title": "Android vs iPhone",
+  "author": "Sohel Katchi",
+  "isbn": "1234569-X",
+  "publisher": "Pluralsight"
+}
+
+
+###
+GET http://127.0.0.1:8000/books/2000
+###
+PUT http://127.0.0.1:8000/books/2000
+Content-Type: application/json
+
+{
+  "id": 2000,
+  "title": "iPhone vs Android",
+  "author": "Sohel Katchi",
+  "isbn": "1234569-X",
+  "publisher": "Pluralsight"
+}
+
+###
+
+DELETE http://127.0.0.1:8000/books/2000
+
+###
+GET http://127.0.0.1:8000/books/2000
